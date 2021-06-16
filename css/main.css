@@ -44,13 +44,17 @@ header {
 
 header .logo {
   font-family: "Bitter";
-  padding-left: 2em;
+  padding-top: .3em;
+  padding-left: 1em;
+  font-size: .7em;
 }
 
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: .7em;
+  padding-top: .1em;
 }
 
 header ul a {
@@ -68,12 +72,16 @@ header ul a {
   display: -ms-grid;
   display: grid;
   text-align: left;
-  padding: 4em;
+  height: 80%;
+}
+
+.topmain .top-content {
+  margin-left: 2.7em;
 }
 
 .topmain .top-title {
   font-family: "Bitter";
-  font-size: 5em;
+  font-size: 3em;
 }
 
 .cta {
@@ -91,14 +99,14 @@ header ul a {
   height: 2em;
   padding-left: 1.5em;
   padding-top: .5em;
-  margin-top: .4em;
+  margin-top: 1.5em;
   margin-right: 1em;
 }
 
 .cta img {
   height: 2em;
   margin-right: .5em;
-  margin-top: .6em;
+  margin-top: 1.7em;
 }
 
 .topmain-elements {
@@ -106,24 +114,25 @@ header ul a {
 }
 
 section {
-  padding: 4em 4em;
+  padding: 2.5em 2.5em;
   text-align: left;
 }
 
 .about {
   position: relative;
   background-color: #FFF1E1;
+  z-index: -1;
 }
 
 .floral-image-about {
   position: absolute;
-  width: 25em;
+  width: 20em;
   margin-left: -4em;
   z-index: -1;
-  margin-top: 0em;
+  margin-top: -1.5em;
 }
 
-.about-subtitle {
+.about-subtitle, .about-experience {
   font-size: 1.3em;
   margin-bottom: 0em;
 }
@@ -135,19 +144,27 @@ section {
   margin-top: 0em;
 }
 
-.about-tech {
+.about-body {
+  margin-top: -1em;
+}
+
+.about-toptech {
+  margin-top: 3em;
+}
+
+.about-toptech .about-tech {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin-right: 4em;
+  width: 100%;
 }
 
-.about-tech .about-tech-id {
+.about-toptech .about-tech .about-tech-id {
   width: 7em;
 }
 
-.about-tech ul {
+.about-toptech .about-tech ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,18 +174,20 @@ section {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
-.about-tech li {
+.about-toptech .about-tech li {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-top: 1em;
 }
 
-.about-tech img {
+.about-toptech .about-tech img {
   height: 3.5em;
   margin: 0 auto;
+  padding-bottom: .5em;
 }
 
 .tech-title {
@@ -178,5 +197,88 @@ section {
   background: #141115;
   width: 6em;
   margin: 0 auto;
+}
+
+.about-exp {
+  margin-top: 3em;
+}
+
+.job-header .job-title {
+  font-family: "Bitter";
+  font-size: 1.5em;
+}
+
+.job-header .job-loc {
+  font-family: "Bitter";
+  margin-top: -1em;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.job-time {
+  margin-top: -.5em;
+  font-weight: 100;
+  font-size: .95em;
+}
+
+.job-technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.job-technologies ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.job-technologies .job-tech {
+  border-radius: 25px;
+  font-size: 1em;
+  color: #FFF1E1;
+  background: #141115;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: .5em;
+  margin-top: 0em;
+}
+
+.job-desc ul {
+  margin-left: 1.2em;
+  list-style-type: disc;
+}
+
+.portfolio-floral {
+  position: absolute;
+  width: 20em;
+  margin-top: -2em;
+  z-index: 1;
+}
+
+.portfolio {
+  background: #141115;
+}
+
+.portfolio .portfolio-title {
+  font-family: "Bitter";
+  font-size: 3em;
+  position: relative;
+  z-index: 5;
+}
+
+.portfolio .portfolio-box {
+  background: #FFF1E1;
+  z-index: 0;
+}
+
+.portfolio .portfolio-tech {
+  position: relative;
+  z-index: 1;
 }
 /*# sourceMappingURL=main.css.map */
