@@ -160,11 +160,11 @@
         <section class="portfolio">
             <ul class="portfolio-ul">
                 <li class="portfolio1">
-                    <img class="portfolio-floral" src="images/floral-portfolio1.svg" alt="linkedin">
                     <div class="portfolio-box">
-                        <h1 class="portfolio-title">Portfolio</h1>
+                        <h1 class="portfolio-title">Portfolio Site</h1>
+                        <img class="portfolio-floral" src="images/floral-portfolio1.svg" alt="linkedin">
                         <hr class="portfolio-hr"/>
-                        <ul>
+                        <ul class="portfolio-tech-ul">
                             <li>
                                 <p class="portfolio-tech">Javascript</p>
                             </li>
@@ -176,43 +176,49 @@
                             </li>
                         </ul>
                         <p class="portfolio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in dolor vitae lorem pretium rutrum. Suspendisse viverra magna et est fringilla egestas. In hac habitasse platea dictumst. Nulla facilisis efficitur mattis. Vestibulum maximus porta nisi sed ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <ul>
+                        <ul class="portfolio-interact">
                             <li>
-                                <img src="images/github_portfolio.svg" alt="project repository">
+                                <img class="portfolio-github" src="images/github_portfolio.svg" alt="project repository">
                             </li>
                             <li>
                                 <p class="portfolio-preview">Live Preview</p>
                             </li>
                         </ul>
-                        <div></div>
+                    </div>
+                    <div class="portfolio-image">
+                        <img class="center" src="images/portfoliosite.png" alt="project repository">
                     </div>
                 </li>
             </ul>
         </section>
 
         <section class="contact">
-            <div class="">
-
-            </div>
+            <!--<img class="background-circles" src="images/circlespattern.svg" alt="project repository">-->
             <div class="contact-form">
-                <form action="action_page.php">
-                    <div class="contact-background">
-                        <img src="images/circlespattern.svg" alt="project repository">
-                    </div>
-                    <div class="contact-form-floral">
-                        <img src="images/floral-left.svg" alt="project repository">
-                        <img src="images/floral-right.svg" alt="project repository">
-                    </div>
-                    <div class="contact-form-box">
-                        <input type="text" id="fname" name="firstname" placeholder="Name">
-                    
-                        <input type="text" id="lname" name="lastname" placeholder="Email">
-                    
-                        <textarea id="subject" name="Message" placeholder="Message" style="height:200px"></textarea>
-                    
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
+
+                <div class="contact-left">
+                    <h1 class="contact-title">Shoot Me a <br/>Message</h1>
+                </div>
+                <div class="contact-right">
+                    <form action="action_page.php">
+                        <div class="contact-background">
+                            
+                        </div>
+                        <div class="contact-form-floral">
+                            <img class="contact-left-floral" src="images/floral-left.svg" alt="project repository">
+                            <img class="contact-right-floral" src="images/floral-right.svg" alt="project repository">
+                        </div>
+                        <div class="contact-form-box">
+                            <input type="text" id="fname" name="firstname" placeholder="Name">
+                        
+                            <input type="text" id="lname" name="lastname" placeholder="Email">
+                        
+                            <textarea id="subject" name="Message" placeholder="Message" style="height:200px"></textarea>
+                        
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
 

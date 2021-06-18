@@ -256,8 +256,9 @@ section {
 
 .portfolio-floral {
   position: absolute;
-  width: 20em;
-  margin-top: -2em;
+  width: 13em;
+  margin-left: -2.1em;
+  margin-top: -10em;
   z-index: 1;
 }
 
@@ -272,13 +273,179 @@ section {
   z-index: 5;
 }
 
+.portfolio .portfolio-hr {
+  margin-top: -2em;
+}
+
 .portfolio .portfolio-box {
   background: #FFF1E1;
   z-index: 0;
+  padding-left: 2.1em;
+  padding-right: 2.1em;
+  padding-top: .5em;
+  border-radius: 25px;
 }
 
 .portfolio .portfolio-tech {
   position: relative;
   z-index: 1;
+}
+
+.portfolio .portfolio-github {
+  height: 2em;
+}
+
+.portfolio .portfolio-preview {
+  border-radius: 25px;
+  background: #A3320B;
+  width: 8em;
+  height: 2em;
+  padding-left: 2.2em;
+  padding-top: .5em;
+  margin-right: 1em;
+  font-weight: 1000;
+  color: #FFF1E1;
+  margin-left: 1em;
+}
+
+.portfolio .portfolio-interact {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.portfolio .portfolio-github {
+  margin-top: 1.2em;
+}
+
+.portfolio .portfolio-tech-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 1em;
+}
+
+.portfolio .portfolio-tech-ul .portfolio-tech {
+  border-radius: 15px;
+  font-size: 1em;
+  color: #FFF1E1;
+  background: #141115;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: .5em;
+  margin-top: 0em;
+}
+
+.portfolio .portfolio-image {
+  width: 100%;
+  height: 30%;
+  background: #A3320B;
+  border-radius: 15px;
+  padding-left: 2.1em;
+  padding-right: 2.1em;
+  margin-top: -2em;
+  padding-top: 2em;
+}
+
+.portfolio .portfolio-image img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact {
+  background: #141115;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  background-image: url("../images/circlespattern.svg");
+  background-clip: inherit;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 50vh;
+}
+
+.contact .background-circles {
+  display: block;
+  width: 100%;
+  z-index: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-left {
+  background: #FFF1E1;
+  padding-left: 1em;
+  padding-right: 5em;
+}
+
+.contact .contact-title {
+  font-family: "Bitter";
+  color: #141115;
+  font-size: 2em;
+  text-align: left;
+}
+
+.contact .contact-right {
+  background: #201f20;
+}
+
+.contact .contact-left-floral {
+  position: absolute;
+}
+
+.contact .contact-right-floral {
+  position: absolute;
+}
+
+.contact .contact-form-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */
