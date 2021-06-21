@@ -399,6 +399,7 @@ section {
 }
 
 .contact .contact-form {
+  border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,12 +413,42 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #141115;
+  width: 80%;
 }
 
 .contact .contact-left {
-  background: #FFF1E1;
+  border-radius: 25px;
+  background: #FEBC71;
   padding-left: 1em;
   padding-right: 5em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.contact .contact-left img {
+  height: 1.5em;
+  fill: #141115;
+}
+
+.contact .contact-left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: -1em;
+  margin-left: -.9em;
+}
+
+.contact .contact-left li {
+  margin-right: -.7em;
 }
 
 .contact .contact-title {
@@ -428,15 +459,21 @@ section {
 }
 
 .contact .contact-right {
-  background: #201f20;
+  padding: 1em;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
 }
 
 .contact .contact-left-floral {
   position: absolute;
+  width: 10em;
 }
 
 .contact .contact-right-floral {
   position: absolute;
+  width: 10em;
+  margin-left: 20em;
 }
 
 .contact .contact-form-box {
