@@ -39,19 +39,22 @@ img {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    align-items: center;
+    align-content: center;
+    margin-left: 2.7em;
+    margin-right: 1.3em;
+    margin-top: 1em;
 
     .logo {
         font-family: "Bitter";
         padding-top: .3em;
-        padding-left: 1em;
-        font-size: 2vw;
+        font-size: 1em;
     }
 
     ul {
         display: flex;
-        font-size: 2vw;
-        padding-top: .1em;
+        font-size: .8em;
+        padding-top: .4em;
         a {
             display: block;
             padding: 0 1em;
@@ -67,11 +70,16 @@ header {
     background: #141115;
     color: #FFF1E1;
     display: flex;
-    text-align: left;
-    height: 80%;
+    justify-content: flex-start;
+    align-content: center;
+    padding-bottom: 30em;
+    padding-top: 10em;
     
     .top-content {
+        justify-content: center;
         margin-left: 2.7em;
+        text-align: left;
+        align-content: center;
     }
 
     .top-title {
@@ -84,24 +92,37 @@ header {
 .cta {
     display: flex;
     font-weight: bold;
-    margin-top: -2em;
     font-size: .8em;
 
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
     .meet-button {
+        font-weight: 600;
+        font-size: 1.5em;
         border-radius: 25px;
         background: #FEBC71;
-        width: 8em;
+        color: #FFF1E1;
+        border: none;
         height: 2em;
         padding-left: 1.5em;
+        padding-right: 1.5em;
         padding-top: .5em;
+        padding-bottom: .5em;
+        flex-grow: 2;
+        /*
         margin-top: 1.5em;
         margin-right: 1.5em;
+        */
     }
 
     img {
         height: 2em;
+        /*
         margin-left: -1em;
         margin-top: 1.7em;
+        */
     }
 }
 
@@ -118,6 +139,7 @@ section {
     position: relative;
     background-color: #FFF1E1;
     z-index: -1;
+    padding-bottom: 5em;
 }
 
 .floral-image-about {
@@ -250,6 +272,57 @@ section {
 .portfolio {
     background: #141115;
     padding-bottom: 9em;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: center;
+
+    .portfolio-ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+
+        .portfolio-card {
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+
+            .portfolio-box {
+                background: #FFF1E1;
+                padding-left: 2.1em;
+                padding-right: 2.1em;
+                padding-top: .5em;
+                border-radius: 25px;
+                /*
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                */
+                flex-grow: 5;
+                
+            }
+
+            .portfolio-image {
+                /*
+                width: 100%;
+                height: 50%;
+                max-height: 20em;
+                */
+                background: #A3320B;
+                border-radius: 15px;
+                display: flex;
+                flex-grow: 1;
+                justify-content: center;
+                align-items: center;
+                
+                img {
+                    display: flex;
+                }
+            }
+        }
+    }
+
     .portfolio-title {
         font-family: "Bitter";
         font-size: 3em;
@@ -261,14 +334,7 @@ section {
         margin-top: -2em;
     }
 
-    .portfolio-box {
-        background: #FFF1E1;
-        z-index: 0;
-        padding-left: 2.1em;
-        padding-right: 2.1em;
-        padding-top: .5em;
-        border-radius: 25px;
-    }
+    
 
     .portfolio-tech {
         position: relative;
@@ -320,33 +386,13 @@ section {
         }
     }
 
-    .portfolio-image {
-        width: 100%;
-        height: 30%;
-        background: #A3320B;
-        border-radius: 15px;
-        padding-left: 2.1em;
-        padding-right: 2.1em;
-        margin-top: -2em;
-        padding-top: 2em;
-        
-        img {
-            width: 100%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
 }
 
-.portfolio1 {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 .contact {
     background: #141115;
+
     display: flex;
     position: relative;
     z-index: 1;

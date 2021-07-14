@@ -47,22 +47,28 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 2.7em;
+  margin-right: 1.3em;
+  margin-top: 1em;
 }
 
 header .logo {
   font-family: "Bitter";
   padding-top: .3em;
-  padding-left: 1em;
-  font-size: 2vw;
+  font-size: 1em;
 }
 
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2vw;
-  padding-top: .1em;
+  font-size: .8em;
+  padding-top: .4em;
 }
 
 header ul a {
@@ -80,12 +86,23 @@ header ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: left;
-  height: 80%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-bottom: 30em;
+  padding-top: 10em;
 }
 
 .topmain .top-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 2.7em;
+  text-align: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .topmain .top-title {
@@ -98,25 +115,44 @@ header ul a {
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  margin-top: -2em;
   font-size: .8em;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .cta .meet-button {
+  font-weight: 600;
+  font-size: 1.5em;
   border-radius: 25px;
   background: #FEBC71;
-  width: 8em;
+  color: #FFF1E1;
+  border: none;
   height: 2em;
   padding-left: 1.5em;
+  padding-right: 1.5em;
   padding-top: .5em;
-  margin-top: 1.5em;
-  margin-right: 1.5em;
+  padding-bottom: .5em;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  /*
+        margin-top: 1.5em;
+        margin-right: 1.5em;
+        */
 }
 
 .cta img {
   height: 2em;
-  margin-left: -1em;
-  margin-top: 1.7em;
+  /*
+        margin-left: -1em;
+        margin-top: 1.7em;
+        */
 }
 
 .topmain-elements {
@@ -132,6 +168,7 @@ section {
   position: relative;
   background-color: #FFF1E1;
   z-index: -1;
+  padding-bottom: 5em;
 }
 
 .floral-image-about {
@@ -275,6 +312,85 @@ section {
 .portfolio {
   background: #141115;
   padding-bottom: 9em;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .portfolio-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+}
+
+.portfolio .portfolio-ul .portfolio-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+
+.portfolio .portfolio-ul .portfolio-card .portfolio-box {
+  background: #FFF1E1;
+  padding-left: 2.1em;
+  padding-right: 2.1em;
+  padding-top: .5em;
+  border-radius: 25px;
+  /*
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                */
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+}
+
+.portfolio .portfolio-ul .portfolio-card .portfolio-image {
+  /*
+                width: 100%;
+                height: 50%;
+                max-height: 20em;
+                */
+  background: #A3320B;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio .portfolio-ul .portfolio-card .portfolio-image img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .portfolio .portfolio-title {
@@ -286,15 +402,6 @@ section {
 
 .portfolio .portfolio-hr {
   margin-top: -2em;
-}
-
-.portfolio .portfolio-box {
-  background: #FFF1E1;
-  z-index: 0;
-  padding-left: 2.1em;
-  padding-right: 2.1em;
-  padding-top: .5em;
-  border-radius: 25px;
 }
 
 .portfolio .portfolio-tech {
@@ -355,32 +462,6 @@ section {
   padding-right: 10px;
   margin-right: .5em;
   margin-top: 0em;
-}
-
-.portfolio .portfolio-image {
-  width: 100%;
-  height: 30%;
-  background: #A3320B;
-  border-radius: 15px;
-  padding-left: 2.1em;
-  padding-right: 2.1em;
-  margin-top: -2em;
-  padding-top: 2em;
-}
-
-.portfolio .portfolio-image img {
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.portfolio1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .contact {
